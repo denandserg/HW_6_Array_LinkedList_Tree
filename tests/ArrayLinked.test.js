@@ -27,7 +27,7 @@ describe('List Interface', () => {
         let list = new List();
         it(`should return True, when Interface List has ${expected} method`, function () {
             const actual = expected in list;
-            assert.strictEqual(actual, true);
+            assert.deepEqual(actual, true);
         });
     });
 });
@@ -49,7 +49,7 @@ describe('ListSecond Interface', () => {
         let listsecond = new ListSecond();
         it(`should return True, when Interface ListSecond has ${expected} method`, function () {
             const actual = expected in listsecond;
-            assert.strictEqual(actual, true);
+            assert.deepEqual(actual, true);
         });
     });
 });
